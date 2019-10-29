@@ -16,8 +16,18 @@ require_once("config.php");
 //echo json_encode($search);
 
 //carrega um usuario usando o login e senha
+//$usuario = new Usuario();
+//$usuario->login("renan","akzlk3");
+//echo $usuario;
+
+//Criando um novo usuario
+//$aluno = new usuario("bruna","@alunobruna");
+//$aluno->insert();
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("renan","akzlk3");
+$usuario->loadbyId(7);
+$usuario->update("professor Luis","$%DA23S3*&");
 echo $usuario;
 
 ?>
